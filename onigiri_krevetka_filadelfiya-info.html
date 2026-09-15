@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Онигири креветка филадельфия</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #fefee6; color: #1e293b; line-height: 1.6;
+            display: flex; justify-content: center; align-items: center; min-height: 100vh; padding: 20px;
+        }
+        .info-card {
+            background: #ffffff; padding: 40px 35px; border-radius: 28px;
+            border: 2px solid #FFE600; box-shadow: 0 4px 20px rgba(255, 230, 0, 0.15);
+            max-width: 600px; width: 100%; text-align: center;
+        }
+        .info-card h1 { font-size: 2.2rem; margin-bottom: 16px; }
+        .info-card h1::after {
+            content: ''; display: block; width: 80px; height: 4px;
+            background: #FFE600; margin: 10px auto 0; border-radius: 4px;
+        }
+        .info-card img {
+            max-width: 50%; height: auto; border-radius: 16px; border: 2px solid #FFE600;
+            box-shadow: 0 4px 16px rgba(255, 230, 0, 0.2);
+            display: block; margin: 20px auto;
+        }
+        .info-card .composition, .info-card .nutrition {
+            font-size: 1.05rem; line-height: 1.8; text-align: left;
+            margin: 16px 0; padding: 16px 20px;
+            background: #fefee6; border-radius: 12px; border-left: 4px solid #FFE600;
+        }
+        .info-card .composition strong, .info-card .nutrition strong { color: #cc9900; }
+        .info-card .nutrition .label { font-weight: 600; display: inline-block; min-width: 100px; }
+        .info-card .close-btn {
+            display: inline-block; margin-top: 20px; padding: 10px 30px;
+            background: #FFE600; color: #1e293b; border-radius: 40px;
+            font-weight: 600; transition: background 0.2s; border: none; cursor: pointer;
+        }
+        .info-card .close-btn:hover { background: #ffcc00; }
+        @media (max-width: 600px) {
+            .info-card { padding: 24px 18px; }
+            .info-card h1 { font-size: 1.8rem; }
+            .info-card .composition, .info-card .nutrition { font-size: 0.95rem; padding: 12px 14px; }
+            .info-card img { max-width: 70%; }
+        }
+    </style>
+</head>
+<body>
+    <div class="info-card">
+        <h1>Онигири креветка филадельфия</h1>
+        <img src="Onig/onigiri_krevetka_filadelfiya.png" alt="Онигири креветка филадельфия" />
+        <div class="composition">
+            <strong>Состав:</strong> рис, креветка, творожный сыр, нори.<br />
+            <strong>Масса нетто:</strong> 120 г.
+        </div>
+        <div class="nutrition">
+            <strong>Пищевая и энергетическая ценность в 100 г продукта (средние значения):</strong><br />
+            <span class="label">Белки</span> – 4,7 г.<br />
+            <span class="label">Жиры</span> – 6,8 г.<br />
+            <span class="label">Углеводы</span> – 30,8 г.<br />
+            <span class="label">Калорийность</span> – 204 ккал / 857 кДж.
+        </div>
+        <button class="close-btn" onclick="window.close();">Закрыть окно</button>
+    </div>
+</body>
+</html>
