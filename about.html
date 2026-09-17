@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>СмайК — о нас</title>
+    <link rel="icon" type="image/png" href="smaik logo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -30,11 +31,7 @@
             .nav-links.open { display: flex; }
             .nav-links > li { width: 100%; }
             .nav-links a { padding: 12px 15px; border-bottom: none; display: block; font-size: 1.05rem; }
-            .nav-links > li.dropdown > a {
-                display: flex; justify-content: space-between; align-items: center;
-                background: #fef3c7; border-radius: 10px;
-                padding: 14px 16px; font-weight: 600; cursor: pointer;
-            }
+            .nav-links > li.dropdown > a { display: flex; justify-content: space-between; align-items: center; background: #fef3c7; border-radius: 10px; padding: 14px 16px; font-weight: 600; cursor: pointer; }
             .nav-links > li.dropdown > a i { font-size: 1rem !important; transition: transform 0.2s; }
             .nav-links > li.open-dropdown > a i { transform: rotate(180deg); }
             .dropdown-menu { position: static; display: none; border: none; box-shadow: none; padding-left: 0; background: #fefee6; border-radius: 0; margin-top: 6px; }
@@ -82,7 +79,6 @@
             </ul>
         </div>
     </nav>
-
     <main class="main-content">
         <div class="container">
             <section class="about-block">
@@ -96,14 +92,12 @@
             </section>
         </div>
     </main>
-
     <footer class="footer">
         <div class="container">
             <p>&copy; 2026 СмайК. Все права защищены.</p>
             <p style="margin-top: 6px; font-size: 0.9rem;"><a href="#">Политика конфиденциальности</a> &bull; <a href="#">Условия использования</a></p>
         </div>
     </footer>
-
     <script>
         const burger = document.getElementById('burgerBtn');
         const navLinks = document.getElementById('navLinks');
